@@ -33,19 +33,19 @@
         "archetypes": [
           "corp"
         ],
-        "display_name": "BDOApp1",
+        "display_name": "Corp",
         "exists": false,
-        "id": "bdoapp1",
+        "id": "bdocorp",
         "parent_id": "landingzones"
       },
       {
         "archetypes": [
-          "corp"
+          "bdoapp1"
         ],
-        "display_name": "BDOApp2",
+        "display_name": "BDOApp1",
         "exists": false,
-        "id": "bdoapp2",
-        "parent_id": "landingzones"
+        "id": "bdoapp1",
+        "parent_id": "bdocorp"
       },
       {
         "archetypes": [

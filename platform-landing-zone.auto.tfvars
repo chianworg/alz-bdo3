@@ -34,11 +34,11 @@ custom_replacements = {
 
     # Resource names
     log_analytics_workspace_name            = "bdo3law-management-$${starter_location_01}"
-    # automation_account_name                 = "bdo3aa-management-$${starter_location_01}"
+    automation_account_name                 = "bdo3aa-management-$${starter_location_01}"
     ama_user_assigned_managed_identity_name = "bdo3uami-management-ama-$${starter_location_01}"
-    # dcr_change_tracking_name                = "bdo3dcr-change-tracking"
-    # dcr_defender_sql_name                   = "bdo3dcr-defender-sql"
-    # dcr_vm_insights_name                    = "bdo3dcr-vm-insights"
+    dcr_change_tracking_name                = "bdo3dcr-change-tracking"
+    dcr_defender_sql_name                   = "bdo3dcr-defender-sql"
+    dcr_vm_insights_name                    = "bdo3dcr-vm-insights"
   }
 
   /*
@@ -58,9 +58,9 @@ custom_replacements = {
   NOTE: You cannot refer to another custom resource identifier in this variable.
   */
   resource_identifiers = {
-    # ama_change_tracking_data_collection_rule_id = "$${management_resource_group_id}/providers/Microsoft.Insights/dataCollectionRules/$${dcr_change_tracking_name}"
-    # ama_mdfc_sql_data_collection_rule_id        = "$${management_resource_group_id}/providers/Microsoft.Insights/dataCollectionRules/$${dcr_defender_sql_name}"
-    # ama_vm_insights_data_collection_rule_id     = "$${management_resource_group_id}/providers/Microsoft.Insights/dataCollectionRules/$${dcr_vm_insights_name}"
+    ama_change_tracking_data_collection_rule_id = "$${management_resource_group_id}/providers/Microsoft.Insights/dataCollectionRules/$${dcr_change_tracking_name}"
+    ama_mdfc_sql_data_collection_rule_id        = "$${management_resource_group_id}/providers/Microsoft.Insights/dataCollectionRules/$${dcr_defender_sql_name}"
+    ama_vm_insights_data_collection_rule_id     = "$${management_resource_group_id}/providers/Microsoft.Insights/dataCollectionRules/$${dcr_vm_insights_name}"
     ama_user_assigned_managed_identity_id       = "$${management_resource_group_id}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/$${ama_user_assigned_managed_identity_name}"
     log_analytics_workspace_id                  = "$${management_resource_group_id}/providers/Microsoft.OperationalInsights/workspaces/$${log_analytics_workspace_name}"
   }
@@ -82,7 +82,7 @@ tags = {
 You can use this section to customize the management resources that will be deployed.
 */
 management_resource_settings = {
-#   automation_account_name      = "$${automation_account_name}"
+  automation_account_name      = "$${automation_account_name}"
   location                     = "$${starter_location_01}"
   log_analytics_workspace_name = "$${log_analytics_workspace_name}"
   resource_group_name          = "$${management_resource_group_name}"
@@ -91,7 +91,7 @@ management_resource_settings = {
       name = "$${ama_user_assigned_managed_identity_name}"
     }
   }
-  /*
+
   data_collection_rules = {
     change_tracking = {
       name = "$${dcr_change_tracking_name}"
@@ -103,7 +103,7 @@ management_resource_settings = {
       name = "$${dcr_vm_insights_name}"
     }
   }
-  */
+
 }
 
 /*
@@ -115,9 +115,9 @@ management_group_settings = {
   location           = "$${starter_location_01}"
   parent_resource_id = "$${root_parent_management_group_id}"
   policy_default_values = {
-    # ama_change_tracking_data_collection_rule_id = "$${ama_change_tracking_data_collection_rule_id}"
-    # ama_mdfc_sql_data_collection_rule_id        = "$${ama_mdfc_sql_data_collection_rule_id}"
-    # ama_vm_insights_data_collection_rule_id     = "$${ama_vm_insights_data_collection_rule_id}"
+    ama_change_tracking_data_collection_rule_id = "$${ama_change_tracking_data_collection_rule_id}"
+    ama_mdfc_sql_data_collection_rule_id        = "$${ama_mdfc_sql_data_collection_rule_id}"
+    ama_vm_insights_data_collection_rule_id     = "$${ama_vm_insights_data_collection_rule_id}"
     ama_user_assigned_managed_identity_id       = "$${ama_user_assigned_managed_identity_id}"
     ama_user_assigned_managed_identity_name     = "$${ama_user_assigned_managed_identity_name}"
     log_analytics_workspace_id                  = "$${log_analytics_workspace_id}"
@@ -139,7 +139,7 @@ management_group_settings = {
     }
   }
   policy_assignments_to_modify = {
-    alz = {
+    bdoncroot = {
       policy_assignments = {
         Deploy-MDFC-Config-H224 = {
           parameters = {
@@ -169,7 +169,7 @@ management_group_settings = {
         }
       }
     }
-    corp = {
+    bdocorp = {
       policy_assignments = {
         Deploy-Private-DNS-Zones = {
           enforcement_mode = "DoNotEnforce"
