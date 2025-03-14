@@ -4,7 +4,9 @@
     "policy_assignments": [
       "Block-VM-SKU-Sizes"
     ],
-    "policy_definitions": [],
+    "policy_definitions": [
+      "Block-VM-SKU-Sizes"
+    ],
     "policy_set_definitions": [],
     "role_definitions": []
   }
