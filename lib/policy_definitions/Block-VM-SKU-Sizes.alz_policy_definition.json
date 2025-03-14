@@ -15,6 +15,19 @@
       },
       "mode": "All",
       "parameters": {
+        "effect": {
+            "allowedValues": [
+              "Audit",
+              "Disabled",
+              "Deny"
+            ],
+            "defaultValue": "Deny",
+            "metadata": {
+              "description": "Enable or disable the execution of the policy",
+              "displayName": "Effect"
+            },
+            "type": "String"
+          },        
         "BlockedSKUs": {
           "type": "array",
           "metadata": {
@@ -73,7 +86,7 @@
           ]
         },
         "then": {
-          "effect": "Deny"
+          "effect": "[parameters('effect')]"
         }
       },
       "policyType": "Custom"
