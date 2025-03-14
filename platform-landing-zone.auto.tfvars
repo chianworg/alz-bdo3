@@ -176,6 +176,22 @@ management_group_settings = {
         }
       }
     }
+    bdoapp1 = {
+      policy_assignments = {
+        Block-VM-SKU-Sizes = {
+          parameters = {
+            BlockedSKUs = [
+              "Standard_D2s_v3",
+              "Standard_D4s_v3",
+              "Standard_D8s_v3",
+              "Standard_D16s_v3",
+              "Standard_D32s_v3",
+              "Standard_D64s_v3"
+            ]
+          }
+        }
+      }
+    }
   }
 }
 

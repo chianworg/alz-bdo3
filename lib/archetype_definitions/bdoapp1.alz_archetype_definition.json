@@ -1,7 +1,9 @@
 {
     "$schema": "https://raw.githubusercontent.com/Azure/Azure-Landing-Zones-Library/main/schemas/archetype_definition.json",
     "name": "bdoapp1",
-    "policy_assignments": [],
+    "policy_assignments": [
+      "Block-VM-SKU-Sizes"
+    ],
     "policy_definitions": [],
     "policy_set_definitions": [],
     "role_definitions": []
