@@ -7,7 +7,7 @@
       "description": "Deny the Azure Virtual Machines and Virtual Machine Scaleset Deployments specific VM SKU sizes.",
       "displayName": "Block VM SKU Sizes",
       "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/333d80f4-dd33-4824-8d53-cefe747d7677/providers/Microsoft.Authorization/policyDefinitions/policyDefinition_DenyVirtualMachineSKUs",
-      "definitionVersion": "1.*.*",
+      "definitionVersion": "1.0.0",
       "enforcementMode": "Default",
       "nonComplianceMessages": [
         {
