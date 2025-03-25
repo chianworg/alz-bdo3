@@ -49,6 +49,42 @@
       },
       {
         "archetypes": [
+          "sit"
+        ],
+        "display_name": "BDO SIT Workload",
+        "exists": false,
+        "id": "bdositworkload",
+        "parent_id": "bdoworkload"
+      },
+      {
+        "archetypes": [
+          "uat"
+        ],
+        "display_name": "BDO UAT Workload",
+        "exists": false,
+        "id": "bdouatworkload",
+        "parent_id": "bdoworkload"
+      },
+      {
+        "archetypes": [
+          "preprod"
+        ],
+        "display_name": "BDO PreProd Workload",
+        "exists": false,
+        "id": "bdopreprodworkload",
+        "parent_id": "bdoworkload"
+      },
+      {
+        "archetypes": [
+          "prod"
+        ],
+        "display_name": "BDO Prod Workload",
+        "exists": false,
+        "id": "bdoprodworkload",
+        "parent_id": "bdoworkload"
+      },                                   
+      {
+        "archetypes": [
           "avd"
         ],
         "display_name": "BDO AVD",
