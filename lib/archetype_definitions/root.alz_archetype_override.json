@@ -3,5 +3,8 @@
     "base_archetype": "root",
     "policy_assignments_to_remove": [
       "Audit-ResourceRGLocation"
+    ],
+    "policy_assignments_to_add": [
+      "Allowed-Locations"
     ]
 }
