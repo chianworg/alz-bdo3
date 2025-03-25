@@ -20,9 +20,6 @@
             "southeastasia",
             "eastasia"
           ]
-        },
-        "effect": {
-          "value": "Deny"
         }
       },
       "scope": "/providers/Microsoft.Management/managementGroups/placeholder",
