@@ -40,13 +40,40 @@
       },
       {
         "archetypes": [
-          "bdoapp1"
+          "bdoworkload"
         ],
-        "display_name": "BDOApp1",
+        "display_name": "BDO Workload",
         "exists": false,
-        "id": "bdoapp1",
+        "id": "bdoworkload",
         "parent_id": "bdocorp"
       },
+      {
+        "archetypes": [
+          "avd"
+        ],
+        "display_name": "BDO AVD",
+        "exists": false,
+        "id": "bdoavd",
+        "parent_id": "bdocorp"
+      },
+      {
+        "archetypes": [
+          "sharedinfra"
+        ],
+        "display_name": "BDO Shared Infra",
+        "exists": false,
+        "id": "bdosharedinfra",
+        "parent_id": "bdocorp"
+      },
+      {
+        "archetypes": [
+          "commonplatform"
+        ],
+        "display_name": "BDO Common Platform",
+        "exists": false,
+        "id": "bdocommonplatform",
+        "parent_id": "bdocorp"
+      },                         
       {
         "archetypes": [
           "online"
@@ -82,7 +109,16 @@
         "exists": false,
         "id": "identity",
         "parent_id": "platform"
-      },      
+      },
+      {
+        "archetypes": [
+          "security"
+        ],
+        "display_name": "Security",
+        "exists": false,
+        "id": "security",
+        "parent_id": "platform"
+      },            
       {
         "archetypes": [
           "sandbox"
