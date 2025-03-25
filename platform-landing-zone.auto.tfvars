@@ -176,7 +176,7 @@ management_group_settings = {
         }
       }
     }
-    bdoapp1 = {
+    bdoworkload = {
       policy_assignments = {
         Block-VM-SKU-Sizes = {
           parameters = {
