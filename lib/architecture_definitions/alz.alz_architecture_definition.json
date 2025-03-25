@@ -49,6 +49,15 @@
       },
       {
         "archetypes": [
+          "online"
+        ],
+        "display_name": "Online",
+        "exists": false,
+        "id": "bdoonline",
+        "parent_id": "landingzones"
+      },      
+      {
+        "archetypes": [
           "management"
         ],
         "display_name": "Management",
