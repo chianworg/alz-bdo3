@@ -109,7 +109,43 @@
         "exists": false,
         "id": "bdocommonplatform",
         "parent_id": "bdocorp"
-      },                         
+      },
+      {
+        "archetypes": [
+          "preprod"
+        ],
+        "display_name": "BDO PreProd Common Platform",
+        "exists": false,
+        "id": "bdopreprodcommon",
+        "parent_id": "bdocommonplatform"
+      },
+      {
+        "archetypes": [
+          "prod"
+        ],
+        "display_name": "BDO Prod Common Platform",
+        "exists": false,
+        "id": "bdoprodcommon",
+        "parent_id": "bdocommonplatform"
+      },
+      {
+        "archetypes": [
+          "sit"
+        ],
+        "display_name": "BDO SIT Common Platform",
+        "exists": false,
+        "id": "bdositcommon",
+        "parent_id": "bdocommonplatform"
+      },
+      {
+        "archetypes": [
+          "uat"
+        ],
+        "display_name": "BDO UAT Common Platform",
+        "exists": false,
+        "id": "bdouatcommon",
+        "parent_id": "bdocommonplatform"
+      },                              
       {
         "archetypes": [
           "online"
