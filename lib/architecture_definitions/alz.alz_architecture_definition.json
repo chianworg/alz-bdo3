@@ -154,7 +154,16 @@
         "exists": false,
         "id": "bdoonline",
         "parent_id": "landingzones"
-      },      
+      },
+      {
+        "archetypes": [
+          "thirdparty"
+        ],
+        "display_name": "BDO Third Party",
+        "exists": false,
+        "id": "bdothirdparty",
+        "parent_id": "bdoonline"
+      },               
       {
         "archetypes": [
           "management"
