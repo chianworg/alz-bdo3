@@ -14,14 +14,7 @@
           "message": "Resources are only allowed in certain locations"
         }
       ],
-      "parameters": {
-        "listOfAllowedLocations": {
-          "value": [
-            "southeastasia",
-            "eastasia"
-          ]
-        }
-      },
+      "parameters": {},
       "scope": "/providers/Microsoft.Management/managementGroups/placeholder",
       "notScopes": []
     },

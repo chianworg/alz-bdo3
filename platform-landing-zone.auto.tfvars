@@ -159,6 +159,14 @@ management_group_settings = {
             enableAscForCosmosDbs                       = "Disabled"
             enableAscForCspm                            = "Disabled"
           }
+        },
+        Allowed-Locations = {
+          parameters = {
+            listOfAllowedLocations = [
+              "SoutheastAsia",
+              "EastAsia"
+            ]
+          }
         }
       }
     }
